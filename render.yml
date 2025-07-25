@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: Anup-Portfolio
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn wsgi:app
-    plan: free
