@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: flask-portfolio
+    name: Anup-Portfolio
     env: python
     buildCommand: ""
     startCommand: gunicorn wsgi:app
