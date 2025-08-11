@@ -1,19 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>My Memories</h1>
-<p>Welcome to my memories page! Here, I share some of the moments that have shaped my journey.</p>
-<p>These are some of my favorite memories and experiences:</p>
-
-
-<div class="gallery">
-    {% for image in images %}
-        <div class="memory-card">
-            <img src="{{ image }}" alt="Memory" loading="lazy">
-        </div>
-    {% endfor %}
-</div>
 
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #667eea34, #764ba243);
+    }
     h1, p {
         text-align: center;
         color: #00796b;
@@ -53,5 +47,18 @@
         transform: scale(1.05);
     }
 </style>
+
+<h1>My Memories</h1>
+<p>Welcome to my memories page! Here, I share some of the moments that have shaped my journey.</p>
+<p>These are some of my favorite memories and experiences:</p>
+
+
+<div class="gallery">
+    {% for image in images %}
+        <div class="memory-card">
+            <img src="{{ image }}" alt="Memory" loading="lazy">
+        </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

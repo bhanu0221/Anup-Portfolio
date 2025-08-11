@@ -4,13 +4,16 @@
     body {
         margin: 0;
         padding: 0;
+        font-family: 'Segoe UI', sans-serif;
         background: url("{{ url_for('static', filename='images/hero.jpg') }}") no-repeat center center;
-        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     }
     .projects-container {
-        max-width: 1100px;
+        background: url("{{ url_for('static', filename='images/hero.jpg') }}") no-repeat center center;
+        max-width: 900px;
         margin: 40px auto;
         padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.185);
         font-family: 'Segoe UI', sans-serif;
     }
 
@@ -31,6 +34,7 @@
         object-fit: cover;
         border-radius: 8px;
         border: 1px solid #ccc;
+        box-shadow: 0 0 8px #749ae7;
     }
 
     .project-details {
@@ -39,7 +43,7 @@
     }
 
     .project-details h3 {
-        color: #00796b;
+        color: #808bf4;
         margin-bottom: 10px;
     }
 
@@ -56,15 +60,15 @@
 
     .project-details a {
         text-decoration: none;
-        background-color: #00796b;
+        background-color: #808bf4;
         color: white;
-        padding: 6px 14px;
+        padding: 6px 10px;
         border-radius: 6px;
-        margin-right: 10px;
+        margin-left: 15px;
     }
 
     .project-details a:hover {
-        background-color: #004d40;
+        background-color: black;
     }
 
     @media (max-width: 768px) {
@@ -116,6 +120,6 @@
     </div>
 
     <!-- Add more projects below in the same format -->
-     <p> I will add more projects soon!</p>
+    <p> I will add more projects soon!</p>
 </div>
 {% endblock %}

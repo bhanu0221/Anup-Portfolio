@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <title>Anup Shahi | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Style>
-        nav a {
+    <style> /* lowercase 'style', not 'Style' */
+        nav {
             background-color: rgba(255, 255, 255, 0.242);
-            text-decoration: none;
-            margin-right: 10px;
-            color: #00796b;
-            font-weight: bold;
-            transition: color 0.3s ease;
-
+            padding: 10px;
         }
+
+        nav a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #808bf4;
+            font-weight: bold;
+            font-size: x-large;
+            transition: color 0.3s ease;
+        }
+
         nav a:hover {
             text-decoration: underline;
-            color: #004d40;
+            color: black;
             font-weight: bold;
         }
-    </Style>
+
+        @media (max-width: 768px) {
+            nav a {
+                margin: 1px;
+                background-color: rgba(14, 15, 15, 0.086);
+                font-size: large;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="/">Home</a> |
-        <a href="/about">About</a> |
-        <a href="/projects">Projects</a> |
-        <a href="/memories">Memories</a> |
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/memories">Memories</a>
         <a href="/feedback">Feedback</a>
-
     </nav>
+
     <hr>
+
     {% block content %}{% endblock %}
 </body>
 </html>

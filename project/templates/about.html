@@ -2,18 +2,19 @@
 {% block content %}
 <style>
     body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
         background:url("{{ url_for('static', filename='images/about.jpg') }}") no-repeat center center;
-        background-size: cover;
-        font-family: Arial, sans-serif;
     }
 
     .about-container {
+        background:url("{{ url_for('static', filename='images/about.jpg') }}") no-repeat center center;
         max-width: 900px;
         margin: 40px auto;
         padding: 20px;
-        background-color: #e4f0fcc3;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(233, 230, 230, 0);
+        box-shadow: 0 4px 10px rgba(20, 19, 19, 0.271);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #333;
     }
@@ -49,6 +50,10 @@
         font-size: 1.05rem;
     }
 
+    img:hover {
+        transform: scale(1.05);
+    }
+
     @media (max-width: 768px) {
         .about-container {
             margin: 20px;
@@ -67,10 +72,10 @@
         .about-container ul li {
             font-size: 1rem;
         }
-    }
 
-    img:hover {
+        img:hover {
         transform: scale(1.05);
+        }
     }
 </style>
 
@@ -78,8 +83,11 @@
     <h2>About Me</h2>
     <p>
         Hi, I'm Anup Shahi.
-        I'm from Uttarakhand and have completed my Bachelor's degree in Computer Applications (BCA) from Dehradun. I'm passionate about web development and data analysis, and I'm always eager to gain practical experience and learn new skills.
-        I enjoy solving real-world problems, exploring new technologies, and constantly improving myself. Currently, I'm looking for entry-level
+        I'm from Uttarakhand and have completed my Bachelor's degree in Computer Applications (BCA) from Dehradun. I'm
+        passionate about web development and data analysis, and I'm always eager to gain practical experience and learn
+        new skills.
+        I enjoy solving real-world problems, exploring new technologies, and constantly improving myself. Currently, I'm
+        looking for entry-level
         position in software and web development.
     </p>
 
@@ -122,26 +130,26 @@
 
         <div style="text-align: center; flex: 0 1 auto;">
             <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python Meta Certificate" width="200"
-                style="border-radius: 8px; box-shadow: 0 0 8px #ccc; margin-bottom: 10px;">
+                style="border-radius: 8px; box-shadow: 0 0 8px #749ae7; margin-bottom: 10px;">
             <p>Programming in Python, Meta</p>
         </div>
 
         <div style="text-align: center; flex: 0 1 auto;">
             <img src="{{ url_for('static', filename='images/org.png') }}" alt="Organisational Design Certificate"
-                width="200" style="border-radius: 8px; box-shadow: 0 0 8px #ccc; margin-bottom: 10px;">
+                width="200" style="border-radius: 8px; box-shadow: 0 0 8px #749ae7; margin-bottom: 10px;">
             <p>Organisational Design - Macquarie</p>
         </div>
 
         <div style="text-align: center; flex: 0 1 auto;">
             <img src="{{ url_for('static', filename='images/AI.png') }}" alt="Gen AI Certificate" width="200"
-                style="border-radius: 8px; box-shadow: 0 0 8px #ccc; margin-bottom: 10px;">
+                style="border-radius: 8px; box-shadow: 0 0 8px #749ae7; margin-bottom: 10px;">
             <p>Gen AI for Front-End Developers</p>
 
         </div>
 
         <div style="text-align: center; flex: 0 1 auto;">
             <img src="{{ url_for('static', filename='images/sql.png') }}" alt="SQL Certificate" width="200"
-                style="border-radius: 8px; box-shadow: 0 0 8px #ccc; margin-bottom: 10px;">
+                style="border-radius: 8px; box-shadow: 0 0 8px #749ae7; margin-bottom: 10px;">
             <p>SQL and Relational Databases, IBM skills</p>
         </div>
     </div>
