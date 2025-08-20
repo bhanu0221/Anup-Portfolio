@@ -14,8 +14,8 @@
         margin: 40px auto;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(20, 19, 19, 0.271);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 0 4px 20px rgba(9, 70, 214, 0.584);
+        font-family: 'Segoe UI', Tahoma, sans-serif;
         color: #333;
     }
 
@@ -54,6 +54,19 @@
         transform: scale(1.05);
     }
 
+
+    .card {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .card p {
+        margin-top: 10px;
+        color: black;
+        font-family: italic;
+    }
+
+
     @media (max-width: 768px) {
         .about-container {
             margin: 20px;
@@ -74,7 +87,7 @@
         }
 
         img:hover {
-        transform: scale(1.05);
+            transform: scale(1.05);
         }
     }
 </style>
@@ -108,12 +121,13 @@
 
     <h3>Technical Skills</h3>
     <ul>
-        <li>Frontend: HTML, CSS, Basic JavaScript, and Bootstrap.</li>
-        <li>Backend: Python and Frameworks (Flask, pandas); currently learning Django</li>
+        <li>Frontend: HTML, CSS, JavaScript with basic DOM, and Bootstrap.</li>
+        <li>Backend: Python and Node.js and Frameworks (Flask, pandas for Python and basic express.js for Node.js).</li>
         <li>Database: MySQL, SQL, and Firebase Firestore.</li>
         <li>Tools: Github, Firebase (for auth), VS Code</li>
         <li>Version Control: Git</li>
-        <li>Expert in using AI Tools and Technologies (ChatGPT, GitHub Copilot, BlackBox.AI etc.) for debugging and code
+        <li>Expert in using AI Tools and Technologies (ChatGPT, GitHub Copilot, BlackBox.AI, claude, etc.) for debugging
+            and code
             optimization</li>
     </ul>
 
@@ -121,7 +135,7 @@
     <p>
         I'm currently working on several projects to enhance my skills and build a portfolio.
         I enjoy learning new technologies and applying them in practical scenarios.
-        My goal is to become a proficient web developer and also interested in data analytics and machine learning.
+        My goal is to become a proficient web developer or software developer and also interested in data analytics.
         I am also exploring AI tools to improve my coding efficiency and problem-solving capabilities.
     </p>
 
@@ -153,4 +167,10 @@
             <p>SQL and Relational Databases, IBM skills</p>
         </div>
     </div>
+
+    <div class="card">
+        <p> Explore my <a href="https://www.codewars.com/users/Anup%20shahi" target="_blank">Codewars profile</a>,
+            where I regularly practice and improve my JavaScript skills through coding challenges.</p>
+    </div>
+
     {% endblock %}
